@@ -1,0 +1,140 @@
+.main-div {
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(27, 30, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-div {
+  display: grid;
+  place-items: center;
+}
+
+.child-div figure figcaption {
+  color: #fff;
+  font-size: 2.2rem;
+  padding-top: 2rem;
+  text-transform: capitalize;
+}
+
+.todoForm {
+  width: 33rem;
+  padding: 1rem 2rem;
+  height: 2rem;
+  font-size: 1.8rem;
+  line-height: 1rem;
+  margin-top: 2rem;
+  color: rgb(58, 57, 57);
+  background-color: #fff;
+  border-radius: 4rem;
+}
+
+.todoForm,
+.todoForm:focus,
+.todoForm:active,
+.todoForm:active:focus {
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.todo-btn {
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.showItems {
+  margin-top: 3rem;
+}
+
+.eachItem {
+  padding: 0.5rem 0.1rem;
+  border-radius: 2rem;
+  margin-bottom: 0.7rem;
+  max-width: 25rem;
+  word-break: break-word;
+  background: rgb(14, 177, 123);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.eachItem:hover {
+  background: rgb(18, 18, 18);
+  color: rgb(255, 190, 70);
+}
+
+.showItems .eachItem h3 {
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.addItems {
+  color: rgb(47, 214, 122);
+}
+
+.btn-remove {
+  padding: 1rem 2rem;
+  background-color: red;
+  color: #000;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font: 400 1rem "Roboto";
+  border: 2px solid red;
+}
+.btn-remove:hover {
+  background: transparent;
+  color: red;
+}
+
+.eachItem:hover .deleteBtnTODO {
+  color: rgb(214, 47, 61);
+}
+
+.eachItem:hover .editBtnTODO {
+  color: rgb(100, 214, 47);
+}
+
+.eachItem:hover h3 {
+  color: rgb(255, 190, 70);
+}
+@media screen and (max-width: 672px) {
+  .todoForm {
+    width: 29rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .todoForm {
+    width: 20rem;
+  }
+  .eachItem {
+    max-width: 20rem;
+  }
+  .child-div figure figcaption {
+    color: #fff;
+    font-size: 1.5rem;
+    padding-top: 7rem;
+    text-transform: capitalize;
+  }
+}
+@media (max-width: 470px) {
+  .todoForm {
+    width: 15.8rem;
+  }
+  .eachItem {
+    max-width: 20rem;
+  }
+}
+@media (max-width: 480px) {
+  .todoForm {
+    width: 13rem;
+  }
+  .eachItem {
+    max-width: 15rem;
+  }
+}

@@ -1,0 +1,49 @@
+.card {
+  padding: 2rem;
+  background-color: rgb(234, 236, 236);
+  border-radius: 10px;
+  width: 17rem;
+  height: 17rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  gap: 10px;
+  box-shadow: 0 0 10px #61dafb;
+}
+.card > img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  aspect-ratio: 1;
+}
+.card > p {
+  color: black;
+  font-weight: 600;
+}
+.card:hover {
+  transform: scale(1.01);
+  transition: all 0.3s ease-in-out;
+}
+.myBtn {
+  margin-top: 1rem;
+  padding: 0.4rem 4rem;
+  background-color: rgb(27, 30, 57);
+  border: 1px solid #61dafb;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.myBtn:hover {
+  background-color: #61dafb;
+  border: 2px solid #61dafb;
+  color: #fff;
+}
+@media screen and (max-width: 413px) {
+  .card {
+    width: 11rem;
+    height: 20rem;
+  }
+}

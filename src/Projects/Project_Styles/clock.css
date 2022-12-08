@@ -1,0 +1,30 @@
+.clockContainer {
+  min-height: 84vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 30, 57);
+}
+.allBoxClock {
+  padding: 2rem 3.5rem;
+  border: 2px solid #61dafb;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  background-color: #61dafb;
+  box-shadow: 0 0 10px #fff;
+  border-radius: 1rem;
+}
+@media (max-width: 480px) {
+  .allBoxClock {
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 420px) {
+  .allBoxClock {
+    padding: 2rem 0.5rem;
+    font-size: 2rem;
+  }
+}

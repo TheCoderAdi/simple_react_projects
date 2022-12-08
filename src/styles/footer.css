@@ -1,0 +1,18 @@
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: rgb(27, 30, 57);
+  height: 16vh;
+  width: 100%;
+  margin: auto;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  position: sticky;
+  bottom: 0%;
+  gap: 20px;
+}

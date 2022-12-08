@@ -1,0 +1,30 @@
+.aboutSection {
+  min-height: 89.7vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 30, 57);
+  color: white;
+  flex-direction: column;
+}
+.profileLogo {
+  height: 40vh;
+
+  width: 30vh;
+  border: 2px solid white;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+}
+.iThink {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  text-align: center;
+  width: 80%;
+}
+@media screen and (max-width: 610px) {
+  .iThink {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,66 @@
+.accordionContainer {
+  min-height: 89.7vh;
+  display: flex;
+  background-color: rgb(27, 30, 57);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.main-accordion {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  gap: 1rem;
+}
+.aQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heroWidth {
+  min-height: 5vh;
+  border: 1px solid #61dafb;
+  width: 45rem;
+}
+.p-width {
+  border-top: 2px solid #61dafb;
+  width: 100%;
+  min-height: 8vh;
+  display: grid;
+  place-items: center;
+  float: left;
+}
+.aQuestion > p {
+  font-size: 1.2rem;
+}
+.aQuestion > .show {
+  display: block;
+}
+aQuestion > .hide {
+  display: none;
+}
+@media screen and (max-width: 790px) {
+  .heroWidth {
+    width: 32rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .heroWidth {
+    width: 26rem;
+  }
+  .aQuestion > p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 478px) {
+  .heroWidth {
+    width: 18rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  .heroWidth {
+    width: 15.5rem;
+  }
+}

@@ -1,0 +1,50 @@
+.containerHero {
+  min-height: 89.7vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 30, 57);
+  color: white;
+}
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 1.5rem;
+}
+.contact-form > input {
+  padding: 1rem 5rem;
+  border: 2px solid #61dafb;
+  border-radius: 10px;
+  outline: none;
+}
+.contact-form textarea {
+  padding: 0 5rem;
+  border: 2px solid #61dafb;
+  border-radius: 10px;
+  outline: none;
+}
+.btnSubmit {
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: all 0.2s;
+  border-radius: 10px;
+}
+
+.btnSubmit:hover {
+  background-color: rgb(27, 30, 57);
+  border: 2px solid crimson;
+  color: crimson;
+  transform: scale(0.9);
+}
+@media screen and (max-width: 465px) {
+  .contact-form > textarea {
+    padding: 0rem 0.6rem;
+  }
+  .contact-form > input {
+    padding: 1rem 3rem;
+  }
+}

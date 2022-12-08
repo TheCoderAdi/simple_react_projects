@@ -1,0 +1,110 @@
+.home {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(27, 30, 57);
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+.leftHome {
+  width: 60%;
+  min-height: 90vh;
+  margin-left: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.aboutHero {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.rightHome {
+  width: 40%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+.reactLink {
+  padding: 1rem 2rem;
+  border: 2px solid #61dafb;
+  background-color: rgb(27, 30, 57);
+  font-size: 1rem;
+  font-family: monospace;
+  cursor: pointer;
+  text-align: center;
+  color: #61dafb;
+}
+.reactLink:hover {
+  background-color: #61dafb;
+  border: 2px solid #61dafb;
+  color: #fff;
+}
+
+.whyPage {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(27, 30, 57);
+  color: white;
+}
+.heroText {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  color: rgb(201, 203, 229);
+  margin-bottom: 4rem;
+}
+.heroText > span {
+  color: crimson;
+}
+.answer {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+@media screen and (max-width: 950px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 930px) {
+  .rightHome {
+    width: 60%;
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 590px) {
+  .rightHome {
+    width: 90%;
+    height: 40vh;
+  }
+  .aboutHero {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 675px) {
+  .leftHome {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 610px) {
+  .heroText {
+    font-size: 1.5rem;
+  }
+  .answer {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+}

@@ -1,0 +1,7 @@
+.containerProjects {
+  background-color: rgb(27, 30, 57);
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  width: 100%;
+}

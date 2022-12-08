@@ -1,0 +1,72 @@
+.weatherApp {
+  min-height: 89.7vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(27, 30, 57);
+}
+.weatherBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  min-height: 70vh;
+  width: 35vw;
+  border: 3px solid #61dafb;
+  border-radius: 10px;
+  gap: 20px;
+  box-shadow: 0 0 10px #fff;
+}
+.weatherBox:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.weatherBox > img {
+  background: transparent;
+  border: 2px solid #61dafb;
+  border-radius: 7rem;
+}
+.inputFieldWeather {
+  border: 2px solid #61dafb;
+  padding: 0.5rem 3.5rem;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 2rem;
+}
+.infoWeather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 20vh;
+}
+@media (max-width: 754px) {
+  .weatherBox {
+    width: 60vw;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 570px) {
+  .weatherBox {
+    width: 75vw;
+  }
+}
+@media (max-width: 425px) {
+  .inputFieldWeather {
+    padding: 0.5rem 2rem;
+  }
+}
+@media (max-width: 385px) {
+  .weatherBox {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 355px) {
+  .inputFieldWeather {
+    padding: 0.5rem 1rem;
+  }
+}

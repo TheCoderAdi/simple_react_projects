@@ -1,0 +1,90 @@
+ .container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(27,30,57);
+  width:100%;
+  overflow:hidden;
+}
+.loading {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  display:grid ;
+  place-items : center ;
+}
+.loading > span {
+  position: absolute;
+  width: 10px;
+  height: 100px;
+  border-bottom: 40px solid #222;
+  background: transparent;
+  transform-origin: bottom;
+  transform: rotate(calc(22.5deg * var(--i)));
+}
+.loading > span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: #03a9f4;
+  box-shadow: 0 0 20px #03a9f4;
+  border-radius: 10px;
+  animation: animate 1.5s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate {
+  0% {
+    transform: translateY(160px) rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(160px) rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+.loading > span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 10px;
+  background: #03a9f4;
+  transform: rotate(8deg);
+  animation: animateColor 1.5s linear infinite;
+}
+@keyframes animateColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+/* .loading > span > i {
+  position: absolute;
+  width: 15px;
+  height: 100px;
+  background: #222;
+  border-left: 2px solid #03a9f4;
+  border-right: 2px solid #03a9f4;
+  transform-origin: top;
+  transform: rotate(79deg);
+  animation: animateColor 1.5s linear infinite, animateSide 1.5s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animateSide {
+  0%,
+  40%,
+  65.1%,
+  100% {
+    background: #222;
+  }
+  40.1%,
+  65% {
+    background: #03a9f4;
+  }
+} */

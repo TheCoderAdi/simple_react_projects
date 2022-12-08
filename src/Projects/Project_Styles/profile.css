@@ -1,0 +1,47 @@
+.profile-sec {
+  background: rgb(27, 30, 57);
+  min-height: 89.7vh;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileHeading {
+  font-size: 2rem;
+}
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.profileMain {
+  width: 20rem;
+  border: 2px solid #00caff;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profileIcons {
+  font-size: 2rem;
+  border-radius: 50%;
+}
+.deleteIcon:hover {
+  color: crimson;
+}
+@media screen and (max-width: 600px) {
+  .profileMain {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 400px) {
+  .profileHeading {
+    font-size: 1rem;
+  }
+  .profileMain {
+    width: 15rem;
+  }
+}

@@ -1,0 +1,78 @@
+.randomContainer {
+  min-height: 100vh;
+  background-color: rgb(27, 30, 57);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxRandom {
+  width: 50vw;
+  height: 50vh;
+  border: 2px solid #61dafb;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.boxRandom > h1 {
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+}
+.boxRandom > div {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.boxRandom > button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #61dafb;
+  color: black;
+  background-color: #61dafb;
+  cursor: pointer;
+}
+.boxRandom > button:hover {
+  background-color: transparent;
+  color: whitesmoke;
+}
+@media screen and (max-width: 521px) {
+  .boxRandom {
+    height: 65vh;
+    width: 65vw;
+  }
+}
+
+/* loader */
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #fff;
+  border-color: #61dafb transparent #61dafb transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
