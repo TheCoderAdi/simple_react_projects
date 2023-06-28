@@ -33,9 +33,10 @@ main {
   padding: 15px 10px;
 }
 .logo {
-  height: 2rem;
-  width: 2rem;
-  background-color: aliceblue;
+  height: 2.5rem;
+  width: 2.5rem;
+  object-fit: cover;
+  cursor: pointer;
 }
 .bars {
   width: 2rem;

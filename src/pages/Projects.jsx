@@ -1,12 +1,12 @@
 import ProjectItems from "../components/ProjectItems";
-import counterImg from "../Assests/Counter.png";
-import accordionImg from "../Assests/accordion.png";
-import profileApp from "../Assests/profileApp.png";
-import randomJokeImg from "../Assests/jokeApp.png";
-import todoImg from "../Assests/todo.png";
-import weatherImg from "../Assests/weather.png";
-import calculatorImg from "../Assests/calculator.png";
-import clockImg from "../Assests/clock.png";
+import counterImg from "../assets/Counter.png";
+import accordionImg from "../assets/accordion.png";
+import profileApp from "../assets/profileApp.png";
+import randomJokeImg from "../assets/jokeApp.png";
+import todoImg from "../assets/todo.png";
+import weatherImg from "../assets/weather.png";
+import calculatorImg from "../assets/calculator.png";
+import clockImg from "../assets/clock.png";
 import "../styles/projects.css";
 
 const Projects = () => {

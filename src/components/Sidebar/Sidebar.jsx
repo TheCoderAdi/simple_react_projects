@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { FaBars, FaHome, FaUser } from "react-icons/fa";
 import { MdContacts } from "react-icons/md";
 import { AiFillProject } from "react-icons/ai";
 import { useState } from "react";
-import logo from "../../Assests/logo.png";
+import logo from "../../assets/logo.png";
 import { AnimatePresence, motion } from "framer-motion";
 const routes = [
   {
@@ -31,6 +31,7 @@ const routes = [
 const SideBar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  const navigate = useNavigate();
 
   const showAnimation = {
     hidden: {
@@ -74,6 +75,10 @@ const SideBar = ({ children }) => {
                   exit="hidden"
                   className="logo"
                   src={logo}
+                  onClick={() => {
+                    navigate("/");
+                    toggle();
+                  }}
                 />
               )}
             </AnimatePresence>

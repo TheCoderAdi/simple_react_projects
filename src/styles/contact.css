@@ -1,6 +1,5 @@
 .containerHero {
   min-height: 89.7vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,26 +11,28 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 3rem;
-  font-size: 1.5rem;
+  gap: 1rem;
 }
 .contact-form > input {
-  padding: 1rem 5rem;
+  padding: 1rem 1.3rem;
   border: 2px solid #61dafb;
+  width: 22.4rem;
   border-radius: 10px;
-  outline: none;
+  outline: #61dafb;
 }
 .contact-form textarea {
-  padding: 0 5rem;
+  padding: 0 1rem;
+  width: 22.4rem;
   border: 2px solid #61dafb;
   border-radius: 10px;
-  outline: none;
+  outline: #61dafb;
 }
 .btnSubmit {
   cursor: pointer;
   padding: 1rem 2rem;
   transition: all 0.2s;
   border-radius: 10px;
+  font-size: 1rem;
 }
 
 .btnSubmit:hover {
@@ -40,11 +41,13 @@
   color: crimson;
   transform: scale(0.9);
 }
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 467px) {
   .contact-form > textarea {
-    padding: 0rem 0.6rem;
+    width: 15rem;
+    font-size: 1rem;
   }
   .contact-form > input {
-    padding: 1rem 3rem;
+    width: 15rem;
+    font-size: 1rem;
   }
 }

@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: rgb(27, 30, 57);
-  font-family: "Courier New", Courier, monospace;
   color: white;
 }
 .leftHome {
@@ -33,7 +32,6 @@
   border: 2px solid #61dafb;
   background-color: rgb(27, 30, 57);
   font-size: 1rem;
-  font-family: monospace;
   cursor: pointer;
   text-align: center;
   color: #61dafb;
@@ -57,7 +55,6 @@
 .heroText {
   text-align: center;
   font-size: 3rem;
-  font-family: "Courier New", Courier, monospace;
   font-weight: 400;
   color: rgb(201, 203, 229);
   margin-bottom: 4rem;
@@ -68,8 +65,8 @@
 .answer {
   font-size: 2rem;
   font-weight: 400;
-  font-family: "Courier New", Courier, monospace;
   text-align: center;
+  width: 70%;
 }
 @media screen and (max-width: 950px) {
   .home {

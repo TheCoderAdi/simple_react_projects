@@ -1,4 +1,4 @@
-import profile from "../Assests/profile.jpg";
+import profile from "../assets/profile.jpg";
 import "../styles/about.css";
 import { motion } from "framer-motion";
 const About = () => {

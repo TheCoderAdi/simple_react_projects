@@ -10,7 +10,6 @@ import { BiArrowBack } from "react-icons/bi";
 
 const getLocalItmes = () => {
   let list = localStorage.getItem("lists");
-  console.log(list);
 
   if (list) {
     return JSON.parse(localStorage.getItem("lists"));
@@ -152,15 +151,17 @@ const TODO = () => {
           </div>
 
           {/* clear all button  */}
-          <div className="showItems">
-            <button
-              className="btn-remove"
-              data-sm-link-text="Remove All"
-              onClick={removeAll}
-            >
-              Remove All
-            </button>
-          </div>
+          {items.length > 0 ? (
+            <div className="showItems">
+              <button
+                className="btn-remove"
+                data-sm-link-text="Remove All"
+                onClick={removeAll}
+              >
+                Remove All
+              </button>
+            </div>
+          ) : null}
         </div>
       </div>
       <div className="goToPage">

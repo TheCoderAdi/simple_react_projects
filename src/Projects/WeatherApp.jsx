@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import cloudImg from "../Assests/cloud.png";
+import cloudImg from "../assets/cloud.png";
 import "./Project_Styles/weather.css";
 
 const WeatherApp = () => {
